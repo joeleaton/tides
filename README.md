@@ -46,8 +46,22 @@ Unzip `Tides-1.1.zip` and drag from its `Plug-ins/` folder:
 - `Tides.vst3` → `~/Library/Audio/Plug-Ins/VST3/` — Cubase, Reaper, Live, Bitwig, Studio One, …
 - `Tides.app` → `/Applications` — Standalone (needs no host)
 
-First-run "unidentified developer" warning:
-**System Settings → Privacy & Security → Open Anyway**.
+### First-run gotcha (important)
+
+Tides is ad-hoc-signed, so macOS marks it as quarantined. **The plug-in
+bundles will silently fail to load in your host** until you strip the
+quarantine flag. In Terminal, after copying the files into place:
+
+```
+xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/Components/Tides.component
+xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/VST3/Tides.vst3
+xattr -dr com.apple.quarantine /Applications/Tides.app
+```
+
+For the Standalone you can alternatively use
+**System Settings → Privacy & Security → Open Anyway** after the first
+launch attempt is refused. Bundle plug-ins have no such prompt — the
+`xattr` command is the only fix for those.
 
 ---
 
