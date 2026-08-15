@@ -1,0 +1,15 @@
+build/
+build-*/
+cmake-build-*/
+.DS_Store
+*.user
+
+# Vendored JUCE is large; keep it out of the repo by default.
+# Remove this line if you want JUCE committed for full offline reproducibility.
+libs/JUCE/
+
+# Built plug-in artefacts — distributed via GitHub Releases, not tracked.
+release/
+
+# Design source lives elsewhere.
+design_handoff_tides/
