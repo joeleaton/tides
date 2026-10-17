@@ -16,7 +16,7 @@ Ships as **Audio Unit**, **VST3**, and **Standalone**.
 Grab the latest build from **[Releases](https://github.com/joeleaton/tides/releases)**.
 
 Direct link to the current version:
-**[Tides-1.2.zip](https://github.com/joeleaton/tides/releases/download/v1.2/Tides-1.2.zip)**
+**[Tides-1.3.zip](https://github.com/joeleaton/tides/releases/download/v1.3/Tides-1.3.zip)**
 
 Unzip and read the bundled README for install instructions.
 
@@ -31,21 +31,25 @@ Unzip and read the bundled README for install instructions.
 
 ---
 
-## What's new in 1.2
+## What's new in 1.3
 
-- **Free-running LFOs now actually free-run.** With an LFO's **KB Rst** switch
-  off, each new note picks the LFO up mid-cycle from a continuously-advancing
-  clock, so modulation keeps evolving across and between notes instead of
-  restarting at the same point on every keypress. Turn **KB Rst on** to reset an
-  LFO's phase to zero on each note-on for deterministic starts.
-- **Documentation is now included** — the User Guide and Reference (above) ship
-  in the download under `docs/` and are browsable here in the repo.
+- **Clearer UI typography** — larger, sentence-case parameter labels and white
+  (not grey) value readouts, plus a subtle size bump in the lower sections
+  (scope, voices, meters, routing bar).
+- **Tidier knob rows** — rows that mix knob sizes now line their labels up on a
+  shared baseline instead of the bigger dial dropping its label lower.
+- **Morph fix** — returning the Morph slider to hard-left (or closing the Morph
+  panel) now correctly lands on endpoint A, instead of freezing near B.
+- **Fixed the "Rhythm Crunch" factory preset name.**
+
+Earlier: **1.2** gave LFOs genuine free-run (KB Rst off keeps them evolving
+across notes) and shipped the docs below.
 
 ---
 
 ## Install (short version)
 
-Unzip `Tides-1.2.zip` and drag from its `Plug-ins/` folder:
+Unzip `Tides-1.3.zip` and drag from its `Plug-ins/` folder:
 
 - `Tides.component` → `~/Library/Audio/Plug-Ins/Components/` — Logic, MainStage, GarageBand
 - `Tides.vst3` → `~/Library/Audio/Plug-Ins/VST3/` — Cubase, Reaper, Live, Bitwig, Studio One, …
