@@ -16,7 +16,7 @@ Ships as **Audio Unit**, **VST3**, and **Standalone**.
 Grab the latest build from **[Releases](https://github.com/joeleaton/tides/releases)**.
 
 Direct link to the current version:
-**[Tides-1.3.zip](https://github.com/joeleaton/tides/releases/download/v1.3/Tides-1.3.zip)**
+**[Tides-1.4.zip](https://github.com/joeleaton/tides/releases/download/v1.4/Tides-1.4.zip)**
 
 Unzip and read the bundled README for install instructions.
 
@@ -31,25 +31,22 @@ Unzip and read the bundled README for install instructions.
 
 ---
 
-## What's new in 1.3
+## What's new in 1.4
 
-- **Clearer UI typography** — larger, sentence-case parameter labels and white
-  (not grey) value readouts, plus a subtle size bump in the lower sections
-  (scope, voices, meters, routing bar).
-- **Tidier knob rows** — rows that mix knob sizes now line their labels up on a
-  shared baseline instead of the bigger dial dropping its label lower.
-- **Morph fix** — returning the Morph slider to hard-left (or closing the Morph
-  panel) now correctly lands on endpoint A, instead of freezing near B.
-- **Fixed the "Rhythm Crunch" factory preset name.**
+- **Click the preset name to browse** — the separate Browse button is gone; the
+  preset name in the header now opens the preset menu (marked with a ▾ caret,
+  highlights on hover). ◀ ▶ still step through presets.
 
-Earlier: **1.2** gave LFOs genuine free-run (KB Rst off keeps them evolving
+Earlier: **1.3** brought clearer UI typography, tidier knob rows, a Morph
+return-to-A fix and a preset-name typo fix.
+**1.2** gave LFOs genuine free-run (KB Rst off keeps them evolving
 across notes) and shipped the docs below.
 
 ---
 
 ## Install (short version)
 
-Unzip `Tides-1.3.zip` and drag from its `Plug-ins/` folder:
+Unzip `Tides-1.4.zip` and drag from its `Plug-ins/` folder:
 
 - `Tides.component` → `~/Library/Audio/Plug-Ins/Components/` — Logic, MainStage, GarageBand
 - `Tides.vst3` → `~/Library/Audio/Plug-Ins/VST3/` — Cubase, Reaper, Live, Bitwig, Studio One, …

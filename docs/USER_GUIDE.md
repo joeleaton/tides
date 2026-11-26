@@ -57,7 +57,7 @@ That's the whole loop. Everything else refines this.
 
 ```
 ┌────────────────────────────────────────────────────────────┐ ◀ TOP BAR
-│ TIDES │  ◀ PRESET NAME ▶  BROWSE  A/B  SAVE  INIT  NOTES  │
+│ TIDES │  ◀ PRESET NAME ▾ ▶   A/B   SAVE   INIT   NOTES     │
 ├────────────────────────────────────────────────────────────┤ ◀ GROUP BAR
 │ [G1] [G2] [G3] [G4] [G5] [G6]   QUALITY  MORPH A▸B  • • • │
 ├──────────────┬───────────────┬──────────────┬──────────────┤
@@ -74,11 +74,12 @@ That's the whole loop. Everything else refines this.
 ### Top bar
 
 - **TIDES** — brand block.
-- **◀ Preset name ▶** — current preset. Arrows step prev/next through
-  the **factory** library only (USER presets and INIT don't step).
-- **BROWSE** — full menu of factory presets, grouped by category, with
-  a **USER** submenu containing your saved sounds plus **Manage…** and
-  **Reveal Folder** entries.
+- **Preset name ▾** — current preset. **Click it** to open the preset
+  browser: the full factory library grouped by category, the **Layer
+  mode** toggle, and a **USER** submenu containing your saved sounds
+  plus **Manage…** and **Reveal Folder** entries.
+- **◀ ▶** — step prev/next through the **factory** library only (USER
+  presets and INIT don't step).
 - **A/B** — compares your live edits against the saved baseline. First
   press swaps to the baseline (lit). Second press restores your edits.
   See §6.
@@ -370,7 +371,7 @@ BASS, BELL, STRINGS, RANDOM, LAYERED). Each ships with design notes
 - **SAVE** → name → return. Confirmation prompt if you'd overwrite.
 - Stored at `~/Library/Application Support/Tides/Presets/` as `.tides`
   XML files.
-- **BROWSE → USER** lists them, plus **Manage Presets…** (rename /
+- **Preset name → USER** (click the preset name) lists them, plus **Manage Presets…** (rename /
   delete / reveal individual files) and **Reveal Folder in Finder**.
 
 User presets store the **focused group** only — they do not capture
